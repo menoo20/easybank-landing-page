@@ -1,0 +1,139 @@
+footer{
+    background-color: $Dark-Blue;
+    padding: 22px 0 28px;
+    @include for-size(desktop-up){
+        padding: 47px 0;
+    }
+    .footer-columns{
+        @include for-size(desktop-up){
+            height:100px;
+            &.container{
+                padding: 0 162px;
+            }
+            &.flex-column{
+                flex-direction: row;
+                align-items:center;
+                justify-content:flex-start;
+                
+            }
+            &.center{
+                text-align:unset;
+            }
+        }
+        .social{
+            @include for-size(desktop-up){
+                flex:1;
+                height:100%;
+            }
+            .brand-img{
+                padding-bottom: 30px;
+                > img{
+                    color: #fff;
+                   fill:currentColor;
+                }
+            }
+            .social-icons{
+                margin-bottom: 35px;
+                @include for-size(desktop-up){
+                    margin-bottom: 0;
+                }
+                 svg:nth-child(3){
+                     transform:translateY(2px) scale(1.18);
+                     
+                 }
+                 svg:nth-child(2){
+                     transform: scale(1.17);
+                 }
+                 svg{
+                    cursor: pointer;
+                    width:24px;
+                    height:24px;
+                    &:hover path{
+                        transition: all 0.3s ease-in-out;
+                        fill:$Lime-Green;
+                     }
+                    path{
+                     transform: scale(1.12);
+                     transition: all 0.3s ease-in-out;
+                }
+            }
+                gap: 17px;
+                img{
+                    height: 26px;
+                    cursor: pointer;
+                    &:hover{
+                        color: red;
+                    }
+                }
+                @include for-size(desktop-up){
+                    img {
+                        height: 22px;
+
+                    }
+                    &.flex-jc-c{
+                      justify-content:flex-start
+                    }
+                }
+            }
+        }
+        .footer-links{
+            @include for-size(desktop-up){
+                flex:1;
+                height: 100%;
+                
+            }
+            .links{
+                margin-bottom: 20px;
+                    a{
+                        color: #fff;
+                        font-size:15.5px;
+                        font-weight:300;
+                        transition: all 0.3s ease-in-out;
+                        margin:10px 0;
+                        &:hover{
+                            color: $Lime-Green;
+                        }
+                }
+            }
+                @include for-size(desktop-up){
+                    .links{
+                        flex-wrap: wrap;
+                        margin: 0;
+                        padding: 4px 0;
+                        height: 100px;
+                        box-sizing: border-box;
+                        gap: 20px 128px;
+                      
+                        a{
+                            color: #fff;
+                            font-size:15.5px;
+                            font-weight:300;
+                            transition: all 0.3s ease-in-out;
+                            margin:0;
+                            &:hover{
+                                color: $Lime-Green;
+                            }
+                    }
+                }
+             
+                
+                    }
+                } 
+            .footer-button{
+                @include for-size(desktop-up){
+                    flex:1.5;
+                    text-align:right
+                }
+                button{
+                display: inline-block;
+                margin-top:5px;
+                }
+                p{
+                    padding-top: 11px;
+                    margin-bottom:0;
+                }
+            
+            }
+        }
+    
+    }   

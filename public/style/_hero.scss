@@ -1,0 +1,135 @@
+
+.hero{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    padding-bottom: 45px;
+    position: relative;
+
+    // we need this layer to make the color of the background
+    // without interfering with other background layers.
+    .overlay-hero{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height:100%;
+            width: 100%;
+            background-color:$Very-Light-Gray;
+            z-index: -2;
+        }
+    }
+    @include for-size(desktop-up){
+        padding-bottom: 0;
+        margin-top: 0;
+        overflow-x: clip;
+        overflow-x: -moz-hidden-unscrollable;
+    }
+    &::after{
+     position: absolute;
+     content: "";
+     width: 100%;
+     height: 100%;
+     left: 50%;
+     top: 0;
+     z-index: -1;
+    }
+   div{
+       &.flex-column{
+           @include for-size(desktop-up){
+               flex-direction: row;
+               justify-content: space-between;
+               padding-left: 162px;
+               padding-right:162px;
+            
+               min-height: 79vh;
+               align-items: center;
+           }
+       } 
+    
+        &.container{
+            padding: 0 24px;
+        }
+        .hero-img{
+            position: relative;
+            background-image: url("../../images/bg-intro-mobile.svg");
+            background-position: center;
+            background-size: cover;
+            
+            height: 282px;
+            
+            @include for-size(lg-phone){
+                height: calc(72.1vw + 100vw - 428px)
+            }
+            @include for-size(desktop-up){
+                background-image: none;
+                flex:1.9;
+                order: 1;
+                width: 100%;
+                min-height: 658px;
+            };
+            &::after{
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                position: absolute;
+                right: -109%;
+                top: -260px;
+                width: 200%;
+                height: 200%;
+                background-repeat: no-repeat;
+                z-index: -1;
+                @include for-size(desktop-up){
+                background-image: url(../../images/bg-intro-desktop.svg);
+                }
+            }
+            img{
+                position: absolute;
+                width: calc(100% - 42px);
+                left: 50%;
+                top: -106px;
+                transform: translate(-50%);
+                -webkit-transform: translate(-50%);
+                @include for-size(desktop-up){
+                  width:100%;
+                  left: 89.5%;
+                  top: -92px;
+                }
+            }
+          }
+
+        .hero-info{
+          text-align: center;
+          padding: 45px 24px;
+          @include for-size(desktop-up){
+              flex: 1;
+              max-width: 50%;
+              text-align: left;
+              padding: 0;
+              
+          }
+         
+            h1 {
+               color:$Dark-Blue;
+               font-weight: 400;
+               font-size:39px;
+               margin: 0; 
+               @include for-size(desktop-up){
+                   font-size:42px;
+               }     
+            }
+             & p{
+                 margin: 30px 0;
+             } 
+             & button{
+                 margin:8px 0;
+             }
+        }
+        }
+  }

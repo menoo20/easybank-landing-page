@@ -1,0 +1,56 @@
+    
+  .why-us{
+    background-color:#f4f5f7;
+    @include for-size(desktop-up){
+      &.section-padding{
+          padding-top: 112px;
+          padding-bottom:105px;
+      }
+      
+  }
+    & div.container{
+       padding-bottom:0;
+       padding-top:0
+    }
+ 
+    .why-us-intro{
+        @include for-size(desktop-up){
+          padding-bottom:2px;
+          text-align:left;
+          h2{
+              margin-bottom:12px;
+          }
+        }
+        
+    }
+    .why-us-reasons {
+      @include for-size(desktop-up){
+          flex-direction: row;
+          justify-content: flex-start;
+          gap:30px;
+        } 
+        margin-top:40px;
+        .why-us-reason{
+            padding: 18px 0;
+
+            @include for-size(desktop-up){
+                text-align: left;
+                padding: 0;
+            }
+          h4{
+              color: $Dark-Blue;
+              font-weight: 400;
+              font-size: 20px;
+              @include for-size(desktop-up){
+                  margin:40px 0 30px 0;
+              }
+          }
+          p{
+              @include for-size(desktop-up){
+                  font-size:15.25px;
+                  margin-bottom: 0;
+              }
+          }
+        }
+}
+}
