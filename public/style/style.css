@@ -147,14 +147,14 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 300;
   color: #2d314d;
   margin: 0;
 }
 
 p {
-  font-size: 15px;
+  font-size: 16.5px;
   color: #9698a6;
   line-height: 1.6em;
   margin: 20px 0;
@@ -299,7 +299,7 @@ button {
 @media (min-width: 1024px) {
   button {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 13px 30px;
   }
 }
 
@@ -422,6 +422,319 @@ header .header-menu .unstyled-vertical-list li.active {
   opacity: 1;
 }
 
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #2d314d;
+  margin: 0;
+}
+
+p {
+  font-size: 16.5px;
+  color: #9698a6;
+  line-height: 1.6em;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #31d35c;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a {
+  background-color: transparent;
+}
+
+/* flex
+   ========================================================================== */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.unstyled-vertical-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.unstyled-vertical-list li {
+  padding: 15px 0;
+}
+
+.unstyled-vertical-list li:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.unstyled-vertical-list li.active {
+  opacity: 1;
+}
+
+.unstyled-vertical-list li a {
+  color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.unstyled-vertical-list li a:hover {
+  color: #31d35c;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  padding: 18px 24px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 162px;
+    padding-right: 162px;
+  }
+}
+
+.section-padding {
+  padding: 60px 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  display: none;
+  padding: 14px 36px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#2bb7da), to(#31d35c));
+  background-image: linear-gradient(to left, #2bb7da, #31d35c);
+  border-radius: 30px;
+  border: 0;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  margin-top: 0;
+}
+
+@media (min-width: 1024px) {
+  button {
+    display: inline-block;
+    padding: 13px 30px;
+  }
+}
+
+button:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background-image: -webkit-gradient(linear, right top, left top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to left, #31d35c, #2bb7da);
+  opacity: 0.7;
+}
+
 .hero {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -503,9 +816,9 @@ header .header-menu .unstyled-vertical-list li.active {
 @media (min-width: 1024px) {
   .hero div .hero-img {
     background-image: none;
-    -webkit-box-flex: 1.9;
-        -ms-flex: 1.9;
-            flex: 1.9;
+    -webkit-box-flex: 1.7;
+        -ms-flex: 1.7;
+            flex: 1.7;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -549,8 +862,8 @@ header .header-menu .unstyled-vertical-list li.active {
 @media (min-width: 1024px) {
   .hero div .hero-img img {
     width: 100%;
-    left: 89.5%;
-    top: -92px;
+    left: 90.5%;
+    top: -112px;
   }
 }
 
@@ -579,12 +892,14 @@ header .header-menu .unstyled-vertical-list li.active {
 
 @media (min-width: 1024px) {
   .hero div .hero-info h1 {
-    font-size: 42px;
+    font-size: 48px;
   }
 }
 
 .hero div .hero-info p {
   margin: 30px 0;
+  font-weight: 400;
+  font-size: 16.3px;
 }
 
 .hero div .hero-info button {
@@ -615,6 +930,9 @@ header .header-menu .unstyled-vertical-list li.active {
   .why-us .why-us-intro h2 {
     margin-bottom: 12px;
   }
+  .why-us .why-us-intro p {
+    font-size: 16.6px;
+  }
 }
 
 .why-us .why-us-reasons {
@@ -630,7 +948,7 @@ header .header-menu .unstyled-vertical-list li.active {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    gap: 30px;
+    gap: 28px;
   }
 }
 
@@ -645,21 +963,20 @@ header .header-menu .unstyled-vertical-list li.active {
   }
 }
 
-.why-us .why-us-reasons .why-us-reason h4 {
+.why-us .why-us-reasons .why-us-reason h3 {
   color: #2d314d;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 @media (min-width: 1024px) {
-  .why-us .why-us-reasons .why-us-reason h4 {
+  .why-us .why-us-reasons .why-us-reason h3 {
     margin: 40px 0 30px 0;
   }
 }
 
 @media (min-width: 1024px) {
   .why-us .why-us-reasons .why-us-reason p {
-    font-size: 15.25px;
     margin-bottom: 0;
   }
 }
@@ -676,6 +993,7 @@ header .header-menu .unstyled-vertical-list li.active {
 @media (min-width: 1024px) {
   .articles h2 {
     padding: 0 162px 50px;
+    font-size: 38px;
     text-align: left;
     margin-bottom: 0;
   }
@@ -698,7 +1016,7 @@ header .header-menu .unstyled-vertical-list li.active {
 
 @media (min-width: 1024px) {
   .articles .articles-posts.container {
-    padding: 0 162px;
+    padding: 0 160px;
   }
   .articles .articles-posts.flex-column {
     -webkit-box-orient: horizontal;
@@ -761,13 +1079,13 @@ header .header-menu .unstyled-vertical-list li.active {
 @media (min-width: 1024px) {
   .articles .articles-posts .article .article-info {
     padding-bottom: 0;
-    padding: 0 31px 0 24px;
+    padding: 0 26px 0 21px;
   }
 }
 
-.articles .articles-posts .article .article-info a h5 {
+.articles .articles-posts .article .article-info a h3 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 405;
   color: #2d314d;
   margin: 0;
   -webkit-transition: all 0.3s ease-in-out;
@@ -775,19 +1093,19 @@ header .header-menu .unstyled-vertical-list li.active {
 }
 
 @media (min-width: 1024px) {
-  .articles .articles-posts .article .article-info a h5 {
-    font-size: 15px;
+  .articles .articles-posts .article .article-info a h3 {
+    font-size: 17px;
   }
 }
 
-.articles .articles-posts .article .article-info a h5:hover {
+.articles .articles-posts .article .article-info a h3:hover {
   color: #31d35c;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .articles .articles-posts .article p {
-  font-size: 12.5px;
+  font-size: 12.8px;
   font-weight: 400;
 }
 
@@ -795,7 +1113,7 @@ header .header-menu .unstyled-vertical-list li.active {
   .articles .articles-posts .article p {
     margin-top: 14px;
     margin-bottom: 25px;
-    line-height: 1.5em;
+    line-height: 1.4em;
   }
 }
 

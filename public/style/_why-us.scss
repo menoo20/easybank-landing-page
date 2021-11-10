@@ -20,6 +20,9 @@
           h2{
               margin-bottom:12px;
           }
+          p{
+            font-size:16.6px;
+          }
         }
         
     }
@@ -27,7 +30,7 @@
       @include for-size(desktop-up){
           flex-direction: row;
           justify-content: flex-start;
-          gap:30px;
+          gap:28px;
         } 
         margin-top:40px;
         .why-us-reason{
@@ -37,17 +40,17 @@
                 text-align: left;
                 padding: 0;
             }
-          h4{
+          h3{
               color: $Dark-Blue;
               font-weight: 400;
-              font-size: 20px;
+              font-size: 25px;
               @include for-size(desktop-up){
                   margin:40px 0 30px 0;
               }
           }
           p{
               @include for-size(desktop-up){
-                  font-size:15.25px;
+                  
                   margin-bottom: 0;
               }
           }

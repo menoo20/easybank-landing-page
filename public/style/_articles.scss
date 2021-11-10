@@ -6,6 +6,7 @@
         margin-bottom: 35px;
         @include for-size(desktop-up){
         padding:0 162px 50px;
+        font-size: 38px;
         text-align:left;
         margin-bottom: 0;
     }
@@ -24,7 +25,7 @@
        @include for-size(desktop-up){
           
            &.container{
-               padding:0 162px;
+               padding:0 160px;
 
            }
            &.flex-column{
@@ -64,21 +65,21 @@
             .article-info{
                 @include for-size(desktop-up){
                     padding-bottom: 0;
-                    padding: 0 31px 0 24px;
+                    padding: 0 26px 0 21px;
                 }
                 padding:0 30px 43px 30px;
                 flex: 1;
                 a{
                     
                  
-                    h5{
+                   & h3{
                         font-size:16px;
-                        font-weight:400;
+                        font-weight:405;
                         color:$Dark-Blue;
                         margin: 0;  
                         transition:all 0.3s ease-in-out;
                         @include for-size(desktop-up){
-                            font-size:15px;
+                            font-size:17px;
                         }
                         &:hover{
                             color: $Lime-Green;
@@ -91,9 +92,9 @@
                     @include for-size(desktop-up){
                         margin-top:14px;
                         margin-bottom: 25px;
-                        line-height: 1.5em;
+                        line-height: 1.4em;
                     }
-                    font-size:12.5px;
+                    font-size:12.8px;
                     font-weight: 400;
                 }
             }

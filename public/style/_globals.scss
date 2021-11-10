@@ -45,17 +45,18 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+
 }
 
 h2{
-  font-size:32px;
+  font-size:36px;
   font-weight: 300;
   color: $Dark-Blue;
   margin: 0;
 }
 
 p{
-  font-size:15px;
+  font-size:16.5px;
   color:$Grayish-Blue;
   line-height: 1.6em;
   margin: 20px 0;
@@ -168,7 +169,7 @@ button{
   display:none;
   @include for-size(desktop-up){
   display: inline-block;
-  padding: 15px 30px;
+  padding: 13px 30px;
 }
   padding: 14px 36px;
   background-image: linear-gradient(to left,$Bright-Cyan, $Lime-Green );
