@@ -855,13 +855,13 @@ button:hover {
   width: calc(100% - 42px);
   left: 50%;
   top: -106px;
-  transform: translate(-50%);
   -webkit-transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 @media (min-width: 1024px) {
   .hero div .hero-img img {
-    width: 100%;
+    width: 108%;
     left: 90.5%;
     top: -112px;
   }
@@ -892,7 +892,7 @@ button:hover {
 
 @media (min-width: 1024px) {
   .hero div .hero-info h1 {
-    font-size: 48px;
+    font-size: 50px;
   }
 }
 
