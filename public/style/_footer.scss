@@ -2,7 +2,7 @@ footer{
     background-color: $Dark-Blue;
     padding: 22px 0 28px;
     @include for-size(desktop-up){
-        padding: 47px 0;
+        padding: 46px 0;
     }
     .footer-columns{
         @include for-size(desktop-up){

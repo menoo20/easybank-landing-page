@@ -17,12 +17,18 @@
   crossorigin="anonymous"></script>
   <title>Easybank landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
 </head>
+<!-- 
+#############################################################################################################
+                           starting the body of out landing page.
+############################################################################################################# -->
 <body>
  <header>
   <div class="overlay"></div>
+
+  <!-- starting the nav which is a part of the header here -->
+
+
   <nav class="flex flex-jc-sb flex-ai-c container">
    <div class="logo">
     <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20"><defs>
@@ -33,8 +39,8 @@
      
    </div>
    <div class="hamburger">
-     <img src="./images/icon-hamburger.svg" class="menu-icon" alt="">
-     <img src="./images/icon-close.svg" class="close-icon hide" alt="">
+     <img src="./images/icon-hamburger.svg" class="menu-icon" >
+     <img src="./images/icon-close.svg" class="close-icon hide" >
    </div>
    <ul class="unstyled-horizontal-list">
       <li><a href="#home">Home</a></li>
@@ -45,6 +51,10 @@
    </ul>
    <button>Request Info</button>
   </nav>
+
+  <!-- finished the nav part -->
+
+
   <div class="header-menu">
     <ul class="unstyled-vertical-list">
       <li><a href="#home">Home</a></li>
@@ -63,134 +73,135 @@
 <!-- ########################################################################
 making the hero section
 ######################################################################## -->
-
-<section class="hero ">
-  <div class="overlay-hero">
-  <div class="flex flex-column mobile-div">
-  <!-- <div class="flex flex-row desktop-div"> -->
-    <div class="hero-img">
-      <img src="./images/image-mockups.png" alt="">
-    </div>
-    <div class="hero-info  container">
-      <h1>Next generation degital banking</h1>
-      <p> Take your financial life online.
-         Your Easybank account will be a one-stop-shop 
-        for spending, saving, budgeting, investing,
-         and much more.
-      </p>
-      <button>
-        Request Invite
-      </button>
-    </div>
-  </div>
-</div>
-<!-- </div> -->
-</section>
-<!-- ############################################################################################
-why-us section
-############################################################################################ -->
-<section class="why-us section-padding center">
-  <div class="container  ">
-    <div class="why-us-intro">
-      <h2>  Why choose Easybank?</h2>
-      <p>We leverage Open Banking to turn your bank account into your financial hub.<br> Control 
-        your finances like never before.
-      </p>
-    </div>
-    <div class="why-us-reasons flex flex-column flex-ai-c">
-      <div class="why-us-reason">
-        <img src="./images/icon-online.svg" alt="" srcset="">
-        <h3>Online Banking</h3>
-        <p>Our modern web and mobile applications allow you to keep track of your finances 
-          wherever you are in the world.
-        </p>
+<main>
+  <section class="hero ">
+    <div class="overlay-hero">
+    <div class="flex flex-column mobile-div">
+    <!-- <div class="flex flex-row desktop-div"> -->
+      <div class="hero-img">
+        <img src="./images/image-mockups.png" >
       </div>
-      <div class="why-us-reason">
-        <img src="./images/icon-budgeting.svg" alt="" srcset="">
-        <h3>Simple Budgeting</h3>
-        <p>See exactly where your money goes each month. Receive notifications when you’re 
-          close to hitting your limits.
+      <div class="hero-info  container">
+        <h1>Next generation degital banking</h1>
+        <p> Take your financial life online.
+          Your Easybank account will be a one-stop-shop 
+          for spending, saving, budgeting, investing,
+          and much more.
         </p>
-      </div>
-      <div class="why-us-reason">
-        <img src="./images/icon-onboarding.svg" alt="" srcset="">
-        <h3>Fast Onboarding</h3>
-        <p>We don’t do branches. Open your account in minutes online and start taking control 
-          of your finances right away.
-        </p>
-      </div>
-      <div class="why-us-reason">
-        <img src="./images/icon-api.svg" alt="" srcset="">
-        <h3>Open API</h3>
-        <p>Manage your savings, investments, pension, and much more from one account. Tracking 
-          your money has never been easier.</p>
+        <button>
+          Request Invite
+        </button>
       </div>
     </div>
   </div>
-</section>
-<!-- ############################################################################################
-       finished why-us section
-################################################################################################# --!>
-<!-- ############################################################################################
-Articles section
-############################################################################################ -->
-<section class=" articles section-padding">
- <h2 class="center">Latest Articles</h2>
-  <div class="articles-posts flex flex-column container flex-ai-c">
-    <div class="article flex-column">
-         <figure>
-          <img src="./images/image-currency.jpg" alt="Trulli" style="width:100%">
-          <figcaption>By Claire Robinson</figcaption>
-        </figure>
-        <div class="article-info">
-        <a href="#"><h3>Receive money in any currency with no fees</h3></a>
-          <p>The world is getting smaller and we’re becoming more mobile. So why should you be 
-                    forced to only receive money in a single …
+  <!-- </div> -->
+  </section>
+  <!-- ############################################################################################
+  why-us section
+  ############################################################################################ -->
+  <section class="why-us section-padding center">
+    <div class="container  ">
+      <div class="why-us-intro">
+        <h2>  Why choose Easybank?</h2>
+        <p>We leverage Open Banking to turn your bank account into your financial hub.<br> Control 
+          your finances like never before.
+        </p>
+      </div>
+      <div class="why-us-reasons flex flex-column flex-ai-c">
+        <div class="why-us-reason">
+          <img src="./images/icon-online.svg"  >
+          <h3>Online Banking</h3>
+          <p>Our modern web and mobile applications allow you to keep track of your finances 
+            wherever you are in the world.
           </p>
+        </div>
+        <div class="why-us-reason">
+          <img src="./images/icon-budgeting.svg"  >
+          <h3>Simple Budgeting</h3>
+          <p>See exactly where your money goes each month. Receive notifications when you’re 
+            close to hitting your limits.
+          </p>
+        </div>
+        <div class="why-us-reason">
+          <img src="./images/icon-onboarding.svg"  >
+          <h3>Fast Onboarding</h3>
+          <p>We don’t do branches. Open your account in minutes online and start taking control 
+            of your finances right away.
+          </p>
+        </div>
+        <div class="why-us-reason">
+          <img src="./images/icon-api.svg"  >
+          <h3>Open API</h3>
+          <p>Manage your savings, investments, pension, and much more from one account. Tracking 
+            your money has never been easier.</p>
         </div>
       </div>
-    <div class="article">
-        <figure>
-          <img src="./images/image-restaurant.jpg" alt="Trulli" style="width:100%">
-          <figcaption>By Wilson Hutton</figcaption>
-        </figure>
-        <div class="article-info">
-        <a href="#"><h3>Treat yourself without worrying about money</h3></a>
-          <p>  Our simple budgeting features allows you to separate out your
-               spending and set realistic limits each month. That means you ...
-          </p>
-        </div>
     </div>
-    <div class="article">
-        <figure>
-          <img src="./images/image-plane.jpg" alt="Trulli" style="width:100%">
-          <figcaption>By Wilson Hutton</figcaption>
-        </figure>
-        <div class="article-info">
-        <a href="#"><h3>Take your easybank card wherever you go</h3></a>
-          <p>We want you to enjoy your travels. This is Why
-            we don't change any fees on purchases while you're abroad.
-            we will even show you ...
-          </p>
+  </section>
+  <!-- ############################################################################################
+        finished why-us section
+  ################################################################################################# --!>
+  <!-- ############################################################################################
+  Articles section
+  ############################################################################################ -->
+  <section class=" articles section-padding">
+  <h2 class="center">Latest Articles</h2>
+    <div class="articles-posts flex flex-column container flex-ai-c">
+      <div class="article flex-column">
+          <figure>
+            <img src="./images/image-currency.jpg" alt="Trulli" style="width:100%">
+            <figcaption>By Claire Robinson</figcaption>
+          </figure>
+          <div class="article-info">
+          <a href="#"><h3>Receive money in any currency with no fees</h3></a>
+            <p>The world is getting smaller and we’re becoming more mobile. So why should you be 
+                      forced to only receive money in a single …
+            </p>
+          </div>
         </div>
-    </div>
-    <div class="article">
-        <figure>
-          <img src="./images/image-confetti.jpg" alt="Trulli" style="width:100%">
-          <figcaption>By Claire Robinson</figcaption>
-        </figure>
-        <div class="article-info">
-          <a href="#"><h3>Our invite-only Beta accounts are now live</h3></a>
-          <p>  After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
-            It’s easy to request an invite through the site ...</p>
-        </div>
+      <div class="article">
+          <figure>
+            <img src="./images/image-restaurant.jpg" alt="Trulli" style="width:100%">
+            <figcaption>By Wilson Hutton</figcaption>
+          </figure>
+          <div class="article-info">
+          <a href="#"><h3>Treat yourself without worrying about money</h3></a>
+            <p>  Our simple budgeting features allows you to separate out your
+                spending and set realistic limits each month. That means you ...
+            </p>
+          </div>
       </div>
-  </div>
-</section>
-
+      <div class="article">
+          <figure>
+            <img src="./images/image-plane.jpg" alt="Trulli" style="width:100%">
+            <figcaption>By Wilson Hutton</figcaption>
+          </figure>
+          <div class="article-info">
+          <a href="#"><h3>Take your easybank card wherever you go</h3></a>
+            <p>We want you to enjoy your travels. This is Why
+              we don't change any fees on purchases while you're abroad.
+              we will even show you ...
+            </p>
+          </div>
+      </div>
+      <div class="article">
+          <figure>
+            <img src="./images/image-confetti.jpg" alt="Trulli" style="width:100%">
+            <figcaption>By Claire Robinson</figcaption>
+          </figure>
+          <div class="article-info">
+            <a href="#"><h3>Our invite-only Beta accounts are now live</h3></a>
+            <p>  After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+              It’s easy to request an invite through the site ...</p>
+          </div>
+        </div>
+    </div>
+  </section>
+</main>
 <!-- ############################################################################################
       finished Articles section
 ############################################################################################ -->
+
 <!-- ############################################################################################
       started Footer section
 ############################################################################################ -->
